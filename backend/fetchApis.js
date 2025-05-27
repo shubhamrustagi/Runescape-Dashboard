@@ -18,14 +18,13 @@ export async function syncAPIs() {
   try {
     for (const item of itemsArr) {
       await pool.query(
-        `INSERT INTO items(item_id, name,icon, examine, members)
-         VALUES ($1, $2, $3, $4, $5)
+        `INSERT INTO items(item_id, name, examine, members)
+         VALUES ($1, $2, $3, $4)
          ON CONFLICT (item_id) DO UPDATE SET 
            name = EXCLUDED.name,
-           icon = EXCLUDED.icon,
            examine = EXCLUDED.examine,
            members = EXCLUDED.members;`,
-        [item.id, item.name,item.icon, item.examine, item.members]
+        [item.id, item.name, item.examine, item.members]
       );
     }
   } catch (err) {
