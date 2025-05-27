@@ -1,5 +1,5 @@
 RuneScape Live Price Dashboard
-A web application that displays live-updating RuneScape item prices in a modern, responsive dashboard.
+A web application that displays live-updating RuneScape item prices in a modern, responsive dashboard. Link to website is https://runescape-dashboard-frontend.onrender.com
 
 Features
 Fetches and stores data from RuneScape Wiki APIs.
@@ -44,8 +44,8 @@ your-repo/
 Local Setup
 1. Clone the repo
 
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+git clone [https://github.com/yourusername/your-repo.git](https://github.com/shubhamrustagi/Runescape-Dashboard/)
+cd Runescape-Dashboard
 2. Set up PostgreSQL
 Ensure PostgreSQL is running.
 
@@ -104,7 +104,7 @@ Build Command: npm install && npm run build
 Start Command: npx serve -s dist
 
 Add environment variable:
-VITE_API_URL=https://your-backend-service.onrender.com
+VITE_API_URL=https://runescape-dashboard.onrender.com
 
 In your backend code, make sure CORS allows your frontend Render URL and http://localhost:5173 for dev.
 
