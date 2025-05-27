@@ -17,6 +17,7 @@ export async function initTables() {
         id SERIAL PRIMARY KEY,
         item_id INTEGER UNIQUE NOT NULL,
         name TEXT NOT NULL,
+        icon TEXT,
         examine TEXT,
         members BOOLEAN
       );
