@@ -19,7 +19,7 @@ import {
   Alert,
 } from '@mui/material';
 
-const socket = io('http://localhost:8081');
+const socket = io(import.meta.env.VITE_API_URL);
 
 const darkTheme = createTheme({
   palette: {
